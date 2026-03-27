@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moto Jakopec</title>
+  <style>
+    :root{
+      --bg:#eef2ec;
+      --bg2:#dde6da;
+      --card:#ffffff;
+      --text:#141814;
+      --muted:#5b655c;
+      --green:#37b63a;
+      --line:rgba(0,0,0,.10);
+      --shadow:0 16px 36px rgba(0,0,0,.10);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:radial-gradient(circle at top left, rgba(55,182,58,.12), transparent 25%),linear-gradient(180deg,var(--bg),var(--bg2));}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    .container{width:min(1220px,calc(100% - 32px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(248,249,247,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{width:112px;height:58px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 8px;box-shadow:var(--shadow)}
+    .brand h1{margin:0;font-size:22px}
+    .brand p{margin:4px 0 0;color:var(--muted);font-size:13px}
+    .btn{border:0;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:800;background:var(--green);color:#071007}
+    .hero{padding:42px 0 22px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+    .badge{display:inline-block;background:rgba(55,182,58,.10);color:#1d7a22;border:1px solid rgba(55,182,58,.18);padding:10px 14px;border-radius:999px;font-size:13px;font-weight:700}
+    h2{font-size:clamp(32px,5vw,58px);line-height:1.02;margin:14px 0}
+    .hero p{font-size:18px;line-height:1.7;color:var(--muted)}
+    .hero-card{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:18px}
+    .hero-card img{border-radius:22px;background:#fff}
+    .section{padding:26px 0}
+    .toolbar{display:grid;grid-template-columns:1fr auto;gap:14px;background:rgba(255,255,255,.74);border:1px solid var(--line);box-shadow:var(--shadow);padding:16px;border-radius:24px}
+    .search{width:100%;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:#fff}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+    .cover{aspect-ratio:4/3;object-fit:cover;width:100%;background:#edf2ec}
+    .card-body{padding:18px}
+    .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:#6e776f;font-weight:800}
+    .title{font-size:24px;font-weight:900;margin:8px 0}
+    .muted{color:var(--muted)}
+    .price{margin-top:10px;font-size:22px;font-weight:800;color:#1d7a22}
+    .card-actions{display:flex;gap:10px;margin-top:16px}
+    .empty{padding:24px;background:#fff;border:1px dashed var(--line);border-radius:18px;color:var(--muted)}
+    .modal{position:fixed;inset:0;display:none;z-index:50}
+    .modal.open{display:block}
+    .backdrop{position:absolute;inset:0;background:rgba(0,0,0,.46)}
+    .modal-wrap{position:absolute;inset:0;display:grid;place-items:center;padding:20px}
+    .modal-panel{position:relative;width:min(1180px,100%);max-height:92vh;overflow:auto;background:#f7faf6;border:1px solid var(--line);border-radius:28px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+    .modal-grid{display:grid;grid-template-columns:1.05fr .95fr}
+    .gallery-main{aspect-ratio:4/3;object-fit:cover;width:100%;background:#eef2ec}
+    .thumbs{display:flex;gap:10px;flex-wrap:wrap;padding:12px}
+    .thumbs img{width:82px;height:62px;object-fit:cover;border-radius:12px;border:1px solid var(--line);cursor:pointer;background:#fff}
+    .modal-body{padding:22px}
+    .price-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;margin:16px 0;font-weight:700;color:#1d7a22}
+    .close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer}
+    footer{padding:24px 0;color:#5c655d;border-top:1px solid var(--line);margin-top:30px}
+    @media (max-width: 980px){.hero-grid,.toolbar,.grid,.modal-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container top">
+      <div class="brand">
+        <img src="logo-jakopec.jpg" alt="Moto Jakopec logo">
+        <div>
+          <h1>Moto Jakopec</h1>
+          <p>Kawasaki katalog s cijenama i galerijom</p>
+        </div>
+      </div>
+      <button class="btn" onclick="window.scrollTo({top: document.getElementById('models').offsetTop - 80, behavior:'smooth'})">Modeli</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Radi s trenutnim repoom</span>
+        <h2>Katalog motocikala s fotografijama i cijenama.</h2>
+        <p>Ova verzija učitava modele iz <b>models.json</b> u rootu i koristi slike iz foldera modela u rootu repozitorija.</p>
+      </div>
+      <div class="hero-card">
+        <img src="logo-jakopec.jpg" alt="Moto Jakopec">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container toolbar">
+      <input id="search" class="search" type="text" placeholder="Pretraži model ili namjenu...">
+      <div style="display:flex;align-items:center;font-weight:800">Ukupno modela: <span id="count" style="margin-left:8px">0</span></div>
+    </div>
+  </section>
+
+  <section id="models" class="section">
+    <div class="container">
+      <div id="grid" class="grid"></div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="backdrop" onclick="closeModal()"></div>
+    <div class="modal-wrap">
+      <div class="modal-panel">
+        <button class="close" onclick="closeModal()">✕</button>
+        <div class="modal-grid">
+          <div>
+            <img id="mainImage" class="gallery-main" src="" alt="">
+            <div id="thumbs" class="thumbs"></div>
+          </div>
+          <div class="modal-body">
+            <div id="modalCategory" class="eyebrow"></div>
+            <div id="modalTitle" class="title"></div>
+            <div id="modalPurpose" class="muted"></div>
+            <div id="modalPrice" class="price-box"></div>
+            <div id="modalDescription" class="muted" style="line-height:1.7;margin-top:18px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">Moto Jakopec • GitHub Pages katalog</div>
+  </footer>
+
+  <script>
+    let models = [];
+    const grid = document.getElementById("grid");
+    const count = document.getElementById("count");
+    const searchInput = document.getElementById("search");
+
+    function esc(v){ return String(v ?? ""); }
+
+    function normalizePath(path){
+      if(!path) return "logo-jakopec.jpg";
+      return String(path)
+        .split("\\").join("/")
+        .split("\").join("/")
+        .replace(/^\.\//, "")
+        .replace("images/models/", "");
+    }
+
+    function extractPrice(model){
+      if (!model || !model.price_block) return "Cijena na upit";
+      const nums = Array.isArray(model.price_block.numbers) ? model.price_block.numbers : [];
+      if (nums.length) return nums[nums.length - 1] + " €";
+      if (model.price_block.raw_snippet) return model.price_block.raw_snippet;
+      return "Cijena na upit";
+    }
+
+    function imageForCard(model){
+      if(Array.isArray(model.images) && model.images.length){
+        return normalizePath(model.images[0]);
+      }
+      return "logo-jakopec.jpg";
+    }
+
+    function card(model){
+      const cover = imageForCard(model);
+      const price = extractPrice(model);
+      return `
+        <article class="card">
+          <img class="cover" src="${cover}" alt="${esc(model.name)}" onerror="this.src='logo-jakopec.jpg'">
+          <div class="card-body">
+            <div class="eyebrow">${esc(model.category || model.purpose || "Model")}</div>
+            <div class="title">${esc(model.name)}</div>
+            <div class="muted">${esc(model.purpose || "")}</div>
+            <div class="price">${esc(price)}</div>
+            <div class="card-actions">
+              <button class="btn" onclick="openModel('${esc(model.id)}')">Detalji</button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function render(){
+      const q = searchInput.value.trim().toLowerCase();
+      const filtered = models.filter(m => {
+        const hay = `${m.name || ""} ${m.purpose || ""} ${m.category || ""} ${m.description || ""}`.toLowerCase();
+        return hay.includes(q);
+      });
+      count.textContent = filtered.length;
+      grid.innerHTML = filtered.length
+        ? filtered.map(card).join("")
+        : '<div class="empty">Nema rezultata za traženi pojam.</div>';
+    }
+
+    function openModel(id){
+      const m = models.find(x => x.id === id);
+      if(!m) return;
+
+      document.getElementById("modalCategory").textContent = esc(m.category || "");
+      document.getElementById("modalTitle").textContent = esc(m.name || "");
+      document.getElementById("modalPurpose").textContent = m.purpose ? "Namjena: " + esc(m.purpose) : "";
+      document.getElementById("modalDescription").textContent = esc(m.description || "");
+      document.getElementById("modalPrice").textContent = extractPrice(m);
+
+      const imgs = Array.isArray(m.images) && m.images.length ? m.images.map(normalizePath) : ["logo-jakopec.jpg"];
+      document.getElementById("mainImage").src = imgs[0];
+      document.getElementById("mainImage").onerror = function(){ this.src = 'logo-jakopec.jpg'; };
+      document.getElementById("thumbs").innerHTML = imgs.map(src =>
+        `<img src="${src}" onerror="this.src='logo-jakopec.jpg'" onclick="document.getElementById('mainImage').src='${src}'">`
+      ).join("");
+
+      document.getElementById("modal").classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(){
+      document.getElementById("modal").classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    searchInput.addEventListener("input", render);
+
+    fetch("models.json")
+      .then(r => {
+        if(!r.ok) throw new Error("models.json nije pronađen");
+        return r.json();
+      })
+      .then(data => {
+        models = Array.isArray(data) ? data : [];
+        render();
+      })
+      .catch(err => {
+        grid.innerHTML = `<div class="empty">Greška pri učitavanju models.json: ${err.message}</div>`;
+      });
+  </script>
+</body>
+</html>
