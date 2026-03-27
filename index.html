@@ -277,7 +277,7 @@
 
     searchInput.addEventListener("input", render);
 
-    fetch("models-clean.json")
+    fetch("models.json")
       .then(r => {
         if(!r.ok) throw new Error("models.json nije pronađen");
         return r.json();
