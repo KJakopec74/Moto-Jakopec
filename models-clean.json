@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "ninja-h2r",
+    "name": "Ninja H2R",
+    "category": "Track-only hypersport",
+    "purpose": "Track-only hypersport",
+    "description": "Ninja H2R je Kawasaki model namijenjen za track-only hypersport.",
+    "price": null,
+    "images": [
+      "ninja-h2r/01.jpg",
+      "ninja-h2r/02.jpg",
+      "ninja-h2r/03.jpg",
+      "ninja-h2r/04.jpg",
+      "ninja-h2r/05.jpg",
+      "ninja-h2r/06.jpg",
+      "ninja-h2r/07.jpg",
+      "ninja-h2r/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-zx-10rr",
+    "name": "Ninja ZX-10RR",
+    "category": "Supersport / track",
+    "purpose": "Supersport / track",
+    "description": "Ninja ZX-10RR je Kawasaki model namijenjen za supersport / track.",
+    "price": null,
+    "images": [
+      "ninja-zx-10rr/01.jpg",
+      "ninja-zx-10rr/02.jpg",
+      "ninja-zx-10rr/03.jpg",
+      "ninja-zx-10rr/04.jpg",
+      "ninja-zx-10rr/05.jpg",
+      "ninja-zx-10rr/06.jpg",
+      "ninja-zx-10rr/07.jpg",
+      "ninja-zx-10rr/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-zx-10r",
+    "name": "Ninja ZX-10R",
+    "category": "Supersport / track",
+    "purpose": "Supersport / track",
+    "description": "Ninja ZX-10R je Kawasaki model namijenjen za supersport / track.",
+    "price": null,
+    "images": [
+      "ninja-zx-10r/01.jpg",
+      "ninja-zx-10r/02.jpg",
+      "ninja-zx-10r/03.jpg",
+      "ninja-zx-10r/04.jpg",
+      "ninja-zx-10r/05.jpg",
+      "ninja-zx-10r/06.jpg",
+      "ninja-zx-10r/07.jpg",
+      "ninja-zx-10r/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-zx-6r",
+    "name": "Ninja ZX-6R",
+    "category": "Supersport / track",
+    "purpose": "Supersport / track",
+    "description": "Ninja ZX-6R je Kawasaki model namijenjen za supersport / track.",
+    "price": null,
+    "images": [
+      "ninja-zx-6r/01.jpg",
+      "ninja-zx-6r/02.jpg",
+      "ninja-zx-6r/03.jpg",
+      "ninja-zx-6r/04.jpg",
+      "ninja-zx-6r/05.jpg",
+      "ninja-zx-6r/06.jpg",
+      "ninja-zx-6r/07.jpg",
+      "ninja-zx-6r/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-zx-4rr",
+    "name": "Ninja ZX-4RR",
+    "category": "Supersport / track",
+    "purpose": "Supersport / track",
+    "description": "Ninja ZX-4RR je Kawasaki model namijenjen za supersport / track.",
+    "price": null,
+    "images": [
+      "ninja-zx-4rr/01.jpg",
+      "ninja-zx-4rr/02.jpg",
+      "ninja-zx-4rr/03.jpg",
+      "ninja-zx-4rr/04.jpg",
+      "ninja-zx-4rr/05.jpg",
+      "ninja-zx-4rr/06.jpg",
+      "ninja-zx-4rr/07.jpg",
+      "ninja-zx-4rr/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-zx-4r",
+    "name": "Ninja ZX-4R",
+    "category": "Supersport / track",
+    "purpose": "Supersport / track",
+    "description": "Ninja ZX-4R je Kawasaki model namijenjen za supersport / track.",
+    "price": null,
+    "images": [
+      "ninja-zx-4r/01.jpg",
+      "ninja-zx-4r/02.jpg",
+      "ninja-zx-4r/03.jpg",
+      "ninja-zx-4r/04.jpg",
+      "ninja-zx-4r/05.jpg",
+      "ninja-zx-4r/06.jpg",
+      "ninja-zx-4r/07.jpg",
+      "ninja-zx-4r/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-h2-sx-se",
+    "name": "Ninja H2 SX SE",
+    "category": "Sport touring",
+    "purpose": "Sport touring",
+    "description": "Ninja H2 SX SE je Kawasaki model namijenjen za sport touring.",
+    "price": null,
+    "images": [
+      "ninja-h2-sx-se/01.jpg",
+      "ninja-h2-sx-se/02.jpg",
+      "ninja-h2-sx-se/03.jpg",
+      "ninja-h2-sx-se/04.jpg",
+      "ninja-h2-sx-se/05.jpg",
+      "ninja-h2-sx-se/06.jpg",
+      "ninja-h2-sx-se/07.jpg",
+      "ninja-h2-sx-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-h2-sx",
+    "name": "Ninja H2 SX",
+    "category": "Sport touring",
+    "purpose": "Sport touring",
+    "description": "Ninja H2 SX je Kawasaki model namijenjen za sport touring.",
+    "price": null,
+    "images": [
+      "ninja-h2-sx/01.jpg",
+      "ninja-h2-sx/02.jpg",
+      "ninja-h2-sx/03.jpg",
+      "ninja-h2-sx/04.jpg",
+      "ninja-h2-sx/05.jpg",
+      "ninja-h2-sx/06.jpg",
+      "ninja-h2-sx/07.jpg",
+      "ninja-h2-sx/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-1100sx-se",
+    "name": "Ninja 1100SX SE",
+    "category": "Sport touring",
+    "purpose": "Sport touring",
+    "description": "Ninja 1100SX SE je Kawasaki model namijenjen za sport touring.",
+    "price": null,
+    "images": [
+      "ninja-1100sx-se/01.jpg",
+      "ninja-1100sx-se/02.jpg",
+      "ninja-1100sx-se/03.jpg",
+      "ninja-1100sx-se/04.jpg",
+      "ninja-1100sx-se/05.jpg",
+      "ninja-1100sx-se/06.jpg",
+      "ninja-1100sx-se/07.jpg",
+      "ninja-1100sx-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-1100sx",
+    "name": "Ninja 1100SX",
+    "category": "Sport touring",
+    "purpose": "Sport touring",
+    "description": "Ninja 1100SX je Kawasaki model namijenjen za sport touring.",
+    "price": null,
+    "images": [
+      "ninja-1100sx/01.jpg",
+      "ninja-1100sx/02.jpg",
+      "ninja-1100sx/03.jpg",
+      "ninja-1100sx/04.jpg",
+      "ninja-1100sx/05.jpg",
+      "ninja-1100sx/06.jpg",
+      "ninja-1100sx/07.jpg",
+      "ninja-1100sx/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-650-se",
+    "name": "Ninja 650 SE",
+    "category": "Sport / daily road",
+    "purpose": "Sport / daily road",
+    "description": "Ninja 650 SE je Kawasaki model namijenjen za sport / daily road.",
+    "price": null,
+    "images": [
+      "ninja-650-se/01.jpg",
+      "ninja-650-se/02.jpg",
+      "ninja-650-se/03.jpg",
+      "ninja-650-se/04.jpg",
+      "ninja-650-se/05.jpg",
+      "ninja-650-se/06.jpg",
+      "ninja-650-se/07.jpg",
+      "ninja-650-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-650",
+    "name": "Ninja 650",
+    "category": "Sport / daily road",
+    "purpose": "Sport / daily road",
+    "description": "Ninja 650 je Kawasaki model namijenjen za sport / daily road.",
+    "price": null,
+    "images": [
+      "ninja-650/01.jpg",
+      "ninja-650/02.jpg",
+      "ninja-650/03.jpg",
+      "ninja-650/04.jpg",
+      "ninja-650/05.jpg",
+      "ninja-650/06.jpg",
+      "ninja-650/07.jpg",
+      "ninja-650/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-500-se",
+    "name": "Ninja 500 SE",
+    "category": "A2 sport / daily road",
+    "purpose": "A2 sport / daily road",
+    "description": "Ninja 500 SE je Kawasaki model namijenjen za a2 sport / daily road.",
+    "price": null,
+    "images": [
+      "ninja-500-se/01.jpg",
+      "ninja-500-se/02.jpg",
+      "ninja-500-se/03.jpg",
+      "ninja-500-se/04.jpg",
+      "ninja-500-se/05.jpg",
+      "ninja-500-se/06.jpg",
+      "ninja-500-se/07.jpg",
+      "ninja-500-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-500",
+    "name": "Ninja 500",
+    "category": "A2 sport / daily road",
+    "purpose": "A2 sport / daily road",
+    "description": "Ninja 500 je Kawasaki model namijenjen za a2 sport / daily road.",
+    "price": null,
+    "images": [
+      "ninja-500/01.jpg",
+      "ninja-500/02.jpg",
+      "ninja-500/03.jpg",
+      "ninja-500/04.jpg",
+      "ninja-500/05.jpg",
+      "ninja-500/06.jpg",
+      "ninja-500/07.jpg",
+      "ninja-500/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-125-se",
+    "name": "Ninja 125 SE",
+    "category": "Entry-level sport / A1",
+    "purpose": "Entry-level sport / A1",
+    "description": "Ninja 125 SE je Kawasaki model namijenjen za entry-level sport / a1.",
+    "price": null,
+    "images": [
+      "ninja-125-se/01.jpg",
+      "ninja-125-se/02.jpg",
+      "ninja-125-se/03.jpg",
+      "ninja-125-se/04.jpg",
+      "ninja-125-se/05.jpg",
+      "ninja-125-se/06.jpg",
+      "ninja-125-se/07.jpg",
+      "ninja-125-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-125",
+    "name": "Ninja 125",
+    "category": "Entry-level sport / A1",
+    "purpose": "Entry-level sport / A1",
+    "description": "Ninja 125 je Kawasaki model namijenjen za entry-level sport / a1.",
+    "price": null,
+    "images": [
+      "ninja-125/01.jpg",
+      "ninja-125/02.jpg",
+      "ninja-125/03.jpg",
+      "ninja-125/04.jpg",
+      "ninja-125/05.jpg",
+      "ninja-125/06.jpg",
+      "ninja-125/07.jpg",
+      "ninja-125/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "ninja-7-hybrid",
+    "name": "Ninja 7 Hybrid",
+    "category": "Hybrid road sport",
+    "purpose": "Hybrid road sport",
+    "description": "Ninja 7 Hybrid je Kawasaki model namijenjen za hybrid road sport.",
+    "price": null,
+    "images": [
+      "ninja-7-hybrid/01.jpg",
+      "ninja-7-hybrid/02.jpg",
+      "ninja-7-hybrid/03.jpg",
+      "ninja-7-hybrid/04.jpg",
+      "ninja-7-hybrid/05.jpg",
+      "ninja-7-hybrid/06.jpg",
+      "ninja-7-hybrid/07.jpg",
+      "ninja-7-hybrid/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-h2-se",
+    "name": "Z H2 SE",
+    "category": "Hypernaked",
+    "purpose": "Hypernaked",
+    "description": "Z H2 SE je Kawasaki model namijenjen za hypernaked.",
+    "price": null,
+    "images": [
+      "z-h2-se/01.jpg",
+      "z-h2-se/02.jpg",
+      "z-h2-se/03.jpg",
+      "z-h2-se/04.jpg",
+      "z-h2-se/05.jpg",
+      "z-h2-se/06.jpg",
+      "z-h2-se/07.jpg",
+      "z-h2-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-h2",
+    "name": "Z H2",
+    "category": "Hypernaked",
+    "purpose": "Hypernaked",
+    "description": "Z H2 je Kawasaki model namijenjen za hypernaked.",
+    "price": null,
+    "images": [
+      "z-h2/01.jpg",
+      "z-h2/02.jpg",
+      "z-h2/03.jpg",
+      "z-h2/04.jpg",
+      "z-h2/05.jpg",
+      "z-h2/06.jpg",
+      "z-h2/07.jpg",
+      "z-h2/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-1100-se",
+    "name": "Z 1100 SE",
+    "category": "Supernaked",
+    "purpose": "Supernaked",
+    "description": "Z 1100 SE je Kawasaki model namijenjen za supernaked.",
+    "price": null,
+    "images": [
+      "z-1100-se/01.jpg",
+      "z-1100-se/02.jpg",
+      "z-1100-se/03.jpg",
+      "z-1100-se/04.jpg",
+      "z-1100-se/05.png",
+      "z-1100-se/06.jpg",
+      "z-1100-se/07.jpg",
+      "z-1100-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-1100",
+    "name": "Z 1100",
+    "category": "Supernaked",
+    "purpose": "Supernaked",
+    "description": "Z 1100 je Kawasaki model namijenjen za supernaked.",
+    "price": null,
+    "images": [
+      "z-1100/01.png",
+      "z-1100/02.jpg",
+      "z-1100/03.jpg",
+      "z-1100/04.jpg",
+      "z-1100/05.jpg",
+      "z-1100/06.png",
+      "z-1100/07.jpg",
+      "z-1100/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-900-se",
+    "name": "Z 900 SE",
+    "category": "Naked roadster",
+    "purpose": "Naked roadster",
+    "description": "Z 900 SE je Kawasaki model namijenjen za naked roadster.",
+    "price": null,
+    "images": [
+      "z-900-se/01.jpg",
+      "z-900-se/02.jpg",
+      "z-900-se/03.jpg",
+      "z-900-se/04.jpg",
+      "z-900-se/05.jpg",
+      "z-900-se/06.jpg",
+      "z-900-se/07.jpg",
+      "z-900-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-900",
+    "name": "Z 900",
+    "category": "Naked roadster",
+    "purpose": "Naked roadster",
+    "description": "Z 900 je Kawasaki model namijenjen za naked roadster.",
+    "price": null,
+    "images": [
+      "z-900/01.jpg",
+      "z-900/02.jpg",
+      "z-900/03.jpg",
+      "z-900/04.jpg",
+      "z-900/05.jpg",
+      "z-900/06.jpg",
+      "z-900/07.jpg",
+      "z-900/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-650-se",
+    "name": "Z 650 SE",
+    "category": "Mid-size naked / A2",
+    "purpose": "Mid-size naked / A2",
+    "description": "Z 650 SE je Kawasaki model namijenjen za mid-size naked / a2.",
+    "price": null,
+    "images": [
+      "z-650-se/01.jpg",
+      "z-650-se/02.jpg",
+      "z-650-se/03.jpg",
+      "z-650-se/04.jpg",
+      "z-650-se/05.jpg",
+      "z-650-se/06.jpg",
+      "z-650-se/07.jpg",
+      "z-650-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-650",
+    "name": "Z 650",
+    "category": "Mid-size naked / A2",
+    "purpose": "Mid-size naked / A2",
+    "description": "Z 650 je Kawasaki model namijenjen za mid-size naked / a2.",
+    "price": null,
+    "images": [
+      "z-650/01.jpg",
+      "z-650/02.jpg",
+      "z-650/03.jpg",
+      "z-650/04.jpg",
+      "z-650/05.jpg",
+      "z-650/06.jpg",
+      "z-650/07.jpg",
+      "z-650/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-500-se",
+    "name": "Z 500 SE",
+    "category": "Entry / A2 naked",
+    "purpose": "Entry / A2 naked",
+    "description": "Z 500 SE je Kawasaki model namijenjen za entry / a2 naked.",
+    "price": null,
+    "images": [
+      "z-500-se/01.jpg",
+      "z-500-se/02.jpg",
+      "z-500-se/03.jpg",
+      "z-500-se/04.jpg",
+      "z-500-se/05.jpg",
+      "z-500-se/06.jpg",
+      "z-500-se/07.jpg",
+      "z-500-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-500",
+    "name": "Z 500",
+    "category": "Entry / A2 naked",
+    "purpose": "Entry / A2 naked",
+    "description": "Z 500 je Kawasaki model namijenjen za entry / a2 naked.",
+    "price": null,
+    "images": [
+      "z-500/01.jpg",
+      "z-500/02.jpg",
+      "z-500/03.jpg",
+      "z-500/04.jpg",
+      "z-500/05.jpg",
+      "z-500/06.jpg",
+      "z-500/07.jpg",
+      "z-500/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-125-se",
+    "name": "Z 125 SE",
+    "category": "Entry / A1 naked",
+    "purpose": "Entry / A1 naked",
+    "description": "Z 125 SE je Kawasaki model namijenjen za entry / a1 naked.",
+    "price": null,
+    "images": [
+      "z-125-se/01.jpg",
+      "z-125-se/02.jpg",
+      "z-125-se/03.jpg",
+      "z-125-se/04.jpg",
+      "z-125-se/05.jpg",
+      "z-125-se/06.jpg",
+      "z-125-se/07.jpg",
+      "z-125-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z-125",
+    "name": "Z 125",
+    "category": "Entry / A1 naked",
+    "purpose": "Entry / A1 naked",
+    "description": "Z 125 je Kawasaki model namijenjen za entry / a1 naked.",
+    "price": null,
+    "images": [
+      "z-125/01.jpg",
+      "z-125/02.jpg",
+      "z-125/03.jpg",
+      "z-125/04.jpg",
+      "z-125/05.jpg",
+      "z-125/06.jpg",
+      "z-125/07.jpg",
+      "z-125/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z900rs-se",
+    "name": "Z900RS SE",
+    "category": "Naked roadster",
+    "purpose": "Naked roadster",
+    "description": "Z900RS SE je Kawasaki model namijenjen za naked roadster.",
+    "price": null,
+    "images": [
+      "z900rs-se/01.jpg",
+      "z900rs-se/02.jpg",
+      "z900rs-se/03.jpg",
+      "z900rs-se/04.jpg",
+      "z900rs-se/05.jpg",
+      "z900rs-se/06.jpg",
+      "z900rs-se/07.jpg",
+      "z900rs-se/08.png"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z900rs",
+    "name": "Z900RS",
+    "category": "Naked roadster",
+    "purpose": "Naked roadster",
+    "description": "Z900RS je Kawasaki model namijenjen za naked roadster.",
+    "price": null,
+    "images": [
+      "z900rs/01.jpg",
+      "z900rs/02.jpg",
+      "z900rs/03.jpg",
+      "z900rs/04.jpg",
+      "z900rs/05.jpg",
+      "z900rs/06.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z900rs-cafe",
+    "name": "Z900RS Cafe",
+    "category": "Naked roadster",
+    "purpose": "Naked roadster",
+    "description": "Z900RS Cafe je Kawasaki model namijenjen za naked roadster.",
+    "price": null,
+    "images": [
+      "z900rs-cafe/01.jpg",
+      "z900rs-cafe/02.jpg",
+      "z900rs-cafe/03.jpg",
+      "z900rs-cafe/04.jpg",
+      "z900rs-cafe/05.jpg",
+      "z900rs-cafe/06.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z650rs-se",
+    "name": "Z650RS SE",
+    "category": "Mid-size naked / A2",
+    "purpose": "Mid-size naked / A2",
+    "description": "Z650RS SE je Kawasaki model namijenjen za mid-size naked / a2.",
+    "price": null,
+    "images": [
+      "z650rs-se/01.jpg",
+      "z650rs-se/02.jpg",
+      "z650rs-se/03.jpg",
+      "z650rs-se/04.png",
+      "z650rs-se/05.png",
+      "z650rs-se/06.jpg",
+      "z650rs-se/07.jpg",
+      "z650rs-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "z650rs",
+    "name": "Z650RS",
+    "category": "Mid-size naked / A2",
+    "purpose": "Mid-size naked / A2",
+    "description": "Z650RS je Kawasaki model namijenjen za mid-size naked / a2.",
+    "price": null,
+    "images": [
+      "z650rs/01.jpg",
+      "z650rs/02.jpg",
+      "z650rs/03.jpg",
+      "z650rs/04.jpg",
+      "z650rs/05.jpg",
+      "z650rs/06.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "w-800",
+    "name": "W 800",
+    "category": "Classic road bike",
+    "purpose": "Classic road bike",
+    "description": "W 800 je Kawasaki model namijenjen za classic road bike.",
+    "price": null,
+    "images": [
+      "w-800/01.jpg",
+      "w-800/02.jpg",
+      "w-800/03.jpg",
+      "w-800/04.jpg",
+      "w-800/05.jpg",
+      "w-800/06.jpg",
+      "w-800/07.jpg",
+      "w-800/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "meguro-s1",
+    "name": "Meguro S1",
+    "category": "Heritage / retro",
+    "purpose": "Heritage / retro",
+    "description": "Meguro S1 je Kawasaki model namijenjen za heritage / retro.",
+    "price": null,
+    "images": [
+      "meguro-s1/01.jpg",
+      "meguro-s1/02.jpg",
+      "meguro-s1/03.jpg",
+      "meguro-s1/04.jpg",
+      "meguro-s1/05.jpg",
+      "meguro-s1/06.jpg",
+      "meguro-s1/07.jpg",
+      "meguro-s1/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "w-230",
+    "name": "W 230",
+    "category": "Light classic road bike",
+    "purpose": "Light classic road bike",
+    "description": "W 230 je Kawasaki model namijenjen za light classic road bike.",
+    "price": null,
+    "images": [
+      "w-230/01.jpg",
+      "w-230/02.jpg",
+      "w-230/03.jpg",
+      "w-230/04.jpg",
+      "w-230/05.jpg",
+      "w-230/06.jpg",
+      "w-230/07.jpg",
+      "w-230/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "vulcan-s-650-se",
+    "name": "Vulcan S 650 SE",
+    "category": "Cruiser",
+    "purpose": "Cruiser",
+    "description": "Vulcan S 650 SE je Kawasaki model namijenjen za cruiser.",
+    "price": null,
+    "images": [
+      "vulcan-s-650-se/01.jpg",
+      "vulcan-s-650-se/02.jpg",
+      "vulcan-s-650-se/03.jpg",
+      "vulcan-s-650-se/04.jpg",
+      "vulcan-s-650-se/05.jpg",
+      "vulcan-s-650-se/06.png",
+      "vulcan-s-650-se/07.png",
+      "vulcan-s-650-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "vulcan-s-650",
+    "name": "Vulcan S 650",
+    "category": "Cruiser",
+    "purpose": "Cruiser",
+    "description": "Vulcan S 650 je Kawasaki model namijenjen za cruiser.",
+    "price": null,
+    "images": [
+      "vulcan-s-650/01.jpg",
+      "vulcan-s-650/02.jpg",
+      "vulcan-s-650/03.jpg",
+      "vulcan-s-650/04.jpg",
+      "vulcan-s-650/05.jpg",
+      "vulcan-s-650/06.jpg",
+      "vulcan-s-650/07.jpg",
+      "vulcan-s-650/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "eliminator-500-se",
+    "name": "Eliminator 500 SE",
+    "category": "Urban cruiser",
+    "purpose": "Urban cruiser",
+    "description": "Eliminator 500 SE je Kawasaki model namijenjen za urban cruiser.",
+    "price": null,
+    "images": [
+      "eliminator-500-se/01.jpg",
+      "eliminator-500-se/02.jpg",
+      "eliminator-500-se/03.jpg",
+      "eliminator-500-se/04.jpg",
+      "eliminator-500-se/05.jpg",
+      "eliminator-500-se/06.jpg",
+      "eliminator-500-se/07.jpg",
+      "eliminator-500-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "eliminator-500",
+    "name": "Eliminator 500",
+    "category": "Urban cruiser",
+    "purpose": "Urban cruiser",
+    "description": "Eliminator 500 je Kawasaki model namijenjen za urban cruiser.",
+    "price": null,
+    "images": [
+      "eliminator-500/01.jpg",
+      "eliminator-500/02.jpg",
+      "eliminator-500/03.jpg",
+      "eliminator-500/04.jpg",
+      "eliminator-500/05.jpg",
+      "eliminator-500/06.jpg",
+      "eliminator-500/07.jpg",
+      "eliminator-500/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "versys-1100-se",
+    "name": "Versys 1100 SE",
+    "category": "Adventure touring",
+    "purpose": "Adventure touring",
+    "description": "Versys 1100 SE je Kawasaki model namijenjen za adventure touring.",
+    "price": null,
+    "images": [
+      "versys-1100-se/01.jpg",
+      "versys-1100-se/02.jpg",
+      "versys-1100-se/03.jpg",
+      "versys-1100-se/04.jpg",
+      "versys-1100-se/05.jpg",
+      "versys-1100-se/06.jpg",
+      "versys-1100-se/07.jpg",
+      "versys-1100-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "versys-1100-s",
+    "name": "Versys 1100 S",
+    "category": "Adventure touring",
+    "purpose": "Adventure touring",
+    "description": "Versys 1100 S je Kawasaki model namijenjen za adventure touring.",
+    "price": null,
+    "images": [
+      "versys-1100-s/01.jpg",
+      "versys-1100-s/02.jpg",
+      "versys-1100-s/03.jpg",
+      "versys-1100-s/04.jpg",
+      "versys-1100-s/05.jpg",
+      "versys-1100-s/06.jpg",
+      "versys-1100-s/07.jpg",
+      "versys-1100-s/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "versys-1100",
+    "name": "Versys 1100",
+    "category": "Adventure touring",
+    "purpose": "Adventure touring",
+    "description": "Versys 1100 je Kawasaki model namijenjen za adventure touring.",
+    "price": null,
+    "images": [
+      "versys-1100/01.jpg",
+      "versys-1100/02.jpg",
+      "versys-1100/03.jpg",
+      "versys-1100/04.jpg",
+      "versys-1100/05.jpg",
+      "versys-1100/06.jpg",
+      "versys-1100/07.jpg",
+      "versys-1100/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "versys-650-se",
+    "name": "Versys 650 SE",
+    "category": "Adventure touring / A2",
+    "purpose": "Adventure touring / A2",
+    "description": "Versys 650 SE je Kawasaki model namijenjen za adventure touring / a2.",
+    "price": null,
+    "images": [
+      "versys-650-se/01.jpg",
+      "versys-650-se/02.jpg",
+      "versys-650-se/03.jpg",
+      "versys-650-se/04.jpg",
+      "versys-650-se/05.jpg",
+      "versys-650-se/06.jpg",
+      "versys-650-se/07.jpg",
+      "versys-650-se/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "versys-650",
+    "name": "Versys 650",
+    "category": "Adventure touring / A2",
+    "purpose": "Adventure touring / A2",
+    "description": "Versys 650 je Kawasaki model namijenjen za adventure touring / a2.",
+    "price": null,
+    "images": [
+      "versys-650/01.jpg",
+      "versys-650/02.jpg",
+      "versys-650/03.jpg",
+      "versys-650/04.jpg",
+      "versys-650/05.jpg",
+      "versys-650/06.jpg",
+      "versys-650/07.jpg",
+      "versys-650/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-450x",
+    "name": "KX 450X",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 450X je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-450x/01.jpg",
+      "kx-450x/02.jpg",
+      "kx-450x/03.png",
+      "kx-450x/04.png",
+      "kx-450x/05.jpg",
+      "kx-450x/06.jpg",
+      "kx-450x/07.jpg",
+      "kx-450x/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-250x",
+    "name": "KX 250X",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 250X je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-250x/01.jpg",
+      "kx-250x/02.jpg",
+      "kx-250x/03.jpg",
+      "kx-250x/04.jpg",
+      "kx-250x/05.jpg",
+      "kx-250x/06.jpg",
+      "kx-250x/07.jpg",
+      "kx-250x/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "klx-230r-s",
+    "name": "KLX 230R S",
+    "category": "Trail / enduro",
+    "purpose": "Trail / enduro",
+    "description": "KLX 230R S je Kawasaki model namijenjen za trail / enduro.",
+    "price": null,
+    "images": [
+      "klx-230r-s/01.jpg",
+      "klx-230r-s/02.jpg",
+      "klx-230r-s/03.jpg",
+      "klx-230r-s/04.jpg",
+      "klx-230r-s/05.jpg",
+      "klx-230r-s/06.jpg",
+      "klx-230r-s/07.jpg",
+      "klx-230r-s/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "klx-140r",
+    "name": "KLX 140R",
+    "category": "Trail / enduro",
+    "purpose": "Trail / enduro",
+    "description": "KLX 140R je Kawasaki model namijenjen za trail / enduro.",
+    "price": null,
+    "images": [
+      "klx-140r/01.jpg",
+      "klx-140r/02.jpg",
+      "klx-140r/03.jpg",
+      "klx-140r/04.jpg",
+      "klx-140r/05.jpg",
+      "klx-140r/06.jpg",
+      "klx-140r/07.jpg",
+      "klx-140r/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "klx-140r-l",
+    "name": "KLX 140R L",
+    "category": "Trail / enduro",
+    "purpose": "Trail / enduro",
+    "description": "KLX 140R L je Kawasaki model namijenjen za trail / enduro.",
+    "price": null,
+    "images": [
+      "klx-140r-l/01.jpg",
+      "klx-140r-l/02.jpg",
+      "klx-140r-l/03.jpg",
+      "klx-140r-l/04.jpg",
+      "klx-140r-l/05.jpg",
+      "klx-140r-l/06.jpg",
+      "klx-140r-l/07.jpg",
+      "klx-140r-l/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "klx-140r-f",
+    "name": "KLX 140R F",
+    "category": "Trail / enduro",
+    "purpose": "Trail / enduro",
+    "description": "KLX 140R F je Kawasaki model namijenjen za trail / enduro.",
+    "price": null,
+    "images": [
+      "klx-140r-f/01.jpg",
+      "klx-140r-f/02.jpg",
+      "klx-140r-f/03.jpg",
+      "klx-140r-f/04.jpg",
+      "klx-140r-f/05.jpg",
+      "klx-140r-f/06.jpg",
+      "klx-140r-f/07.jpg",
+      "klx-140r-f/08.png"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "klx-110r",
+    "name": "KLX 110R",
+    "category": "Trail / enduro",
+    "purpose": "Trail / enduro",
+    "description": "KLX 110R je Kawasaki model namijenjen za trail / enduro.",
+    "price": null,
+    "images": [
+      "klx-110r/01.jpg",
+      "klx-110r/02.jpg",
+      "klx-110r/03.jpg",
+      "klx-110r/04.jpg",
+      "klx-110r/05.jpg",
+      "klx-110r/06.jpg",
+      "klx-110r/07.jpg",
+      "klx-110r/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-450",
+    "name": "KX 450",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 450 je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-450/01.jpg",
+      "kx-450/02.jpg",
+      "kx-450/03.jpg",
+      "kx-450/04.jpg",
+      "kx-450/05.png",
+      "kx-450/06.png",
+      "kx-450/07.jpg",
+      "kx-450/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-250",
+    "name": "KX 250",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 250 je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-250/01.jpg",
+      "kx-250/02.jpg",
+      "kx-250/03.jpg",
+      "kx-250/04.jpg",
+      "kx-250/05.jpg",
+      "kx-250/06.jpg",
+      "kx-250/07.jpg",
+      "kx-250/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-112",
+    "name": "KX 112",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 112 je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-112/01.jpg",
+      "kx-112/02.jpg",
+      "kx-112/03.jpg",
+      "kx-112/04.jpg",
+      "kx-112/05.jpg",
+      "kx-112/06.jpg",
+      "kx-112/07.jpg",
+      "kx-112/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-85-l",
+    "name": "KX 85 L",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 85 L je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-85-l/01.jpg",
+      "kx-85-l/02.jpg",
+      "kx-85-l/03.jpg",
+      "kx-85-l/04.jpg",
+      "kx-85-l/05.jpg",
+      "kx-85-l/06.jpg",
+      "kx-85-l/07.jpg",
+      "kx-85-l/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-85",
+    "name": "KX 85",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 85 je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-85/01.jpg",
+      "kx-85/02.jpg",
+      "kx-85/03.jpg",
+      "kx-85/04.jpg",
+      "kx-85/05.jpg",
+      "kx-85/06.jpg",
+      "kx-85/07.jpg",
+      "kx-85/08.jpg"
+    ],
+    "specs": {}
+  },
+  {
+    "id": "kx-65",
+    "name": "KX 65",
+    "category": "Motocross / off-road",
+    "purpose": "Motocross / off-road",
+    "description": "KX 65 je Kawasaki model namijenjen za motocross / off-road.",
+    "price": null,
+    "images": [
+      "kx-65/01.jpg",
+      "kx-65/02.jpg",
+      "kx-65/03.jpg",
+      "kx-65/04.jpg",
+      "kx-65/05.jpg",
+      "kx-65/06.jpg",
+      "kx-65/07.jpg",
+      "kx-65/08.jpg"
+    ],
+    "specs": {}
+  }
+]
