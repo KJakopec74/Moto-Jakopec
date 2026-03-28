@@ -689,23 +689,36 @@
 
     searchInput.addEventListener("input", render);
 
-    async function loadData(){
-      const candidates = ["models-clean.json", "models.json"];
-      for (const file of candidates) {
-        try{
-          const r = await fetch(file);
-          if (!r.ok) continue;
-          const data = await r.json();
-          const raw = Array.isArray(data) ? data : [];
-          models = raw.map(toViewModel).filter(m => m.name && m.id);
-          renderChips();
-          render();
-          renderCart();
-          return;
-        }catch(e){}
-      }
-      grid.innerHTML = '<div class="empty">Greška pri učitavanju models-clean.json ili models.json.</div>';
+    async function loadData() {
+  try {
+    const r = await fetch("./models.json", { cache: "no-store" });
+
+    console.log("Status:", r.status);
+
+    if (!r.ok) {
+      throw new Error(`HTTP greška: ${r.status}`);
     }
+
+    const data = await r.json();
+
+    console.log("JSON:", data);
+
+    if (!Array.isArray(data)) {
+      throw new Error("models.json nije niz.");
+    }
+
+    models = data.map(toViewModel).filter(m => m.name && m.id);
+
+    console.log("Učitano modela:", models.length);
+
+    renderChips();
+    render();
+    renderCart();
+  } catch (e) {
+    console.error("Greška:", e);
+    grid.innerHTML = `<div class="empty">Greška: ${e.message}</div>`;
+  }
+}
 
     loadData();
   </script>
