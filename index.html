@@ -452,275 +452,105 @@
   </footer>
 
   <script>
-    let models = [];
-    let activeCategory = "Sve";
-    let activeModelId = null;
-    let cart = [];
+  <script>
+let models = [];
+let activeCategory = "Sve";
+let cart = [];
 
-    const grid = document.getElementById("grid");
-    const count = document.getElementById("count");
-    const chipsEl = document.getElementById("chips");
-    const searchInput = document.getElementById("search");
+const grid = document.getElementById("grid");
+const count = document.getElementById("count");
+const chipsEl = document.getElementById("chips");
+const searchInput = document.getElementById("search");
 
-    function toggleNav(){
-      const el = document.getElementById("mobileNav");
-      el.style.display = el.style.display === "block" ? "none" : "block";
-    }
+function esc(v){ return String(v ?? ""); }
 
-    function toggleCart(){
-      document.getElementById("cartPanel").classList.toggle("open");
-    }
+function normalizePath(path){
+  if(!path) return "logo-jakopec.jpg";
+  return path.replace(/\\/g,"/").replace(/^\.?\//,"");
+}
 
-    function esc(v){ return String(v ?? ""); }
+function toViewModel(raw){
+  return {
+    id: raw.id,
+    name: raw.name,
+    category: raw.category || "Model",
+    purpose: raw.purpose || "",
+    description: raw.description || "",
+    price: raw.price || "Cijena na upit",
+    specs: raw.specs || {},
+    images: Array.isArray(raw.images) ? raw.images.map(normalizePath) : []
+  };
+}
 
-    function normalizePath(path){
-      if(!path) return "logo-jakopec.jpg";
-      return String(path)
-        .split("\\\\\\\\").join("/")
-        .split("\\\\").join("/")
-        .replace(/^\\.\\//, "")
-        .replace("images/models/", "");
-    }
+function categoriesFromModels(list){
+  const set = new Set(["Sve"]);
+  list.forEach(m => set.add(m.category));
+  return Array.from(set);
+}
 
-    function isLikelyRealPrice(v){
-      const digits = String(v).replace(/[^\\d]/g, "");
-      if (!digits) return false;
-      const n = parseInt(digits, 10);
-      return n >= 1000 && n <= 100000;
-    }
+function renderChips(){
+  const categories = categoriesFromModels(models);
+  chipsEl.innerHTML = categories.map(cat =>
+    `<button class="chip ${cat===activeCategory?"active":""}" onclick="setCategory('${esc(cat)}')">${esc(cat)}</button>`
+  ).join("");
+}
 
-    function extractPrice(model){
-      if (model.price) return model.price;
-      const pb = model && model.price_block;
-      if (!pb || !Array.isArray(pb.numbers)) return "Cijena na upit";
-      const valid = pb.numbers.filter(isLikelyRealPrice);
-      if (valid.length) return valid[valid.length - 1] + " €";
-      return "Cijena na upit";
-    }
+function setCategory(cat){
+  activeCategory = cat;
+  renderChips();
+  render();
+}
 
-    function cleanSpecs(specs){
-      const out = {};
-      if (!specs || typeof specs !== "object") return out;
-      for (const [k,v] of Object.entries(specs)) {
-        const key = String(k).trim();
-        const val = String(v).trim();
-        const low = key.toLowerCase();
-        if (!key || !val) continue;
-        if (low.startsWith("vti_")) continue;
-        if (["author","timecreated","timelastmodified","backlink","cached","sync","metatags","encoding"].some(x => low.includes(x))) continue;
-        if (val.toLowerCase().includes("vti_")) continue;
-        out[key] = val;
-      }
-      return out;
-    }
+function filteredModels(){
+  const q = searchInput.value.toLowerCase();
+  return models.filter(m=>{
+    const text = (m.name + m.category + m.purpose).toLowerCase();
+    return (activeCategory==="Sve"||m.category===activeCategory) && text.includes(q);
+  });
+}
 
-    function smartDescription(model){
-      const desc = String(model.description || "").trim();
-      if (desc && !desc.toLowerCase().includes("automatski uvezen")) return desc;
-      const purpose = model.purpose || model.category || "cestovni motocikl";
-      return `${model.name} je Kawasaki model namijenjen za ${String(purpose).toLowerCase()}. Pogledaj galeriju fotografija i osnovne podatke o modelu.`;
-    }
+function card(m){
+  const img = m.images[0] || "logo-jakopec.jpg";
+  return `
+  <article class="model-card">
+    <img src="${img}" onerror="this.src='logo-jakopec.jpg'">
+    <div class="model-body">
+      <div class="eyebrow">${esc(m.category)}</div>
+      <div class="model-title">${esc(m.name)}</div>
+      <div class="muted">${esc(m.purpose)}</div>
+      <div class="price">${esc(m.price)}</div>
+    </div>
+  </article>`;
+}
 
-    function toViewModel(raw){
-      return {
-        id: raw.id || "",
-        name: raw.name || "",
-        category: raw.category || raw.purpose || "Model",
-        purpose: raw.purpose || raw.category || "",
-        description: smartDescription(raw),
-        price: extractPrice(raw),
-        specs: cleanSpecs(raw.specs),
-        images: Array.isArray(raw.images) ? raw.images.map(normalizePath) : []
-      };
-    }
+function render(){
+  const list = filteredModels();
+  count.textContent = list.length;
+  grid.innerHTML = list.length ? list.map(card).join("") : "Nema modela";
+}
 
-    function categoriesFromModels(list){
-      const set = new Set(["Sve"]);
-      list.forEach(m => set.add(m.category || "Model"));
-      return Array.from(set);
-    }
+searchInput.addEventListener("input", render);
 
-    function renderChips(){
-      const categories = categoriesFromModels(models);
-      chipsEl.innerHTML = categories.map(cat =>
-        `<button class="chip ${cat === activeCategory ? "active" : ""}" onclick="setCategory('${esc(cat)}')">${esc(cat)}</button>`
-      ).join("");
-    }
-
-    function setCategory(cat){
-      activeCategory = cat;
-      renderChips();
-      render();
-    }
-
-    function imageForCard(model){
-      if (Array.isArray(model.images) && model.images.length) return model.images[0];
-      return "logo-jakopec.jpg";
-    }
-
-    function filteredModels(){
-      const q = searchInput.value.trim().toLowerCase();
-      return models.filter(m => {
-        const hay = `${m.name} ${m.purpose} ${m.category} ${m.description}`.toLowerCase();
-        const matchesSearch = hay.includes(q);
-        const matchesCategory = activeCategory === "Sve" || m.category === activeCategory;
-        return matchesSearch && matchesCategory;
-      });
-    }
-
-    function card(model){
-      const cover = imageForCard(model);
-      return `
-        <article class="model-card">
-          <img src="${cover}" alt="${esc(model.name)}" onerror="this.src='logo-jakopec.jpg'">
-          <div class="model-body">
-            <div class="eyebrow">${esc(model.category)}</div>
-            <div class="model-title">${esc(model.name)}</div>
-            <div class="muted">${esc(model.purpose)}</div>
-            <div class="price">${esc(model.price)}</div>
-            <div class="card-actions">
-              <button class="btn" onclick="openModel('${esc(model.id)}')">Detalji</button>
-              <button class="btn btn-outline" onclick="addToCart('${esc(model.id)}')">Dodaj</button>
-            </div>
-          </div>
-        </article>
-      `;
-    }
-
-    function render(){
-      const list = filteredModels();
-      count.textContent = list.length;
-      grid.innerHTML = list.length ? list.map(card).join("") : '<div class="empty">Nema rezultata za traženi pojam.</div>';
-
-      document.getElementById("statModels").textContent = models.length;
-      document.getElementById("statPriced").textContent = models.filter(m => m.price !== "Cijena na upit").length;
-      document.getElementById("statImages").textContent = models.reduce((s,m)=>s+(m.images?.length||0),0);
-    }
-
-    function openModel(id){
-      const m = models.find(x => x.id === id);
-      if(!m) return;
-      activeModelId = id;
-
-      document.getElementById("modalCategory").textContent = esc(m.category);
-      document.getElementById("modalTitle").textContent = esc(m.name);
-      document.getElementById("modalPurpose").textContent = m.purpose ? "Namjena: " + esc(m.purpose) : "";
-      document.getElementById("modalDescription").textContent = esc(m.description);
-      document.getElementById("modalPrice").textContent = esc(m.price);
-
-      const imgs = (Array.isArray(m.images) && m.images.length) ? m.images : ["logo-jakopec.jpg"];
-      document.getElementById("mainImage").src = imgs[0];
-      document.getElementById("mainImage").onerror = function(){ this.src = 'logo-jakopec.jpg'; };
-      document.getElementById("thumbs").innerHTML = imgs.map(src =>
-        `<img src="${src}" onerror="this.src='logo-jakopec.jpg'" onclick="document.getElementById('mainImage').src='${src}'">`
-      ).join("");
-
-      const entries = Object.entries(m.specs || {});
-      document.getElementById("specs").innerHTML = entries.length
-        ? entries.map(([k,v]) => `<div class="spec-item"><div class="spec-key">${esc(k)}</div><div class="spec-value">${esc(v)}</div></div>`).join("")
-        : "";
-
-      document.getElementById("modal").classList.add("open");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeModal(){
-      document.getElementById("modal").classList.remove("open");
-      document.body.style.overflow = "";
-    }
-
-    function addFromModal(){
-      if (activeModelId) addToCart(activeModelId);
-    }
-
-    function addToCart(id){
-      const model = models.find(x => x.id === id);
-      if (!model) return;
-      const existing = cart.find(x => x.id === id);
-      if (existing) existing.qty += 1;
-      else cart.push({id:model.id, name:model.name, price:model.price, qty:1});
-      renderCart();
-    }
-
-    function renderCart(){
-      const count = cart.reduce((s,i)=>s+i.qty,0);
-      document.getElementById("cartCountTop").textContent = count;
-      document.getElementById("cartCountFloating").textContent = count;
-
-      const body = document.getElementById("cartBody");
-      if (!cart.length){
-        body.innerHTML = '<div class="empty">Košarica je prazna.</div>';
-        document.getElementById("cartTotal").textContent = "0 €";
-        return;
-      }
-
-      body.innerHTML = cart.map(item => `
-        <div class="cart-item">
-          <div class="cart-row">
-            <div>
-              <strong>${esc(item.name)}</strong>
-              <div class="muted">${esc(item.price)}</div>
-            </div>
-            <div class="qty">
-              <button onclick="changeQty('${esc(item.id)}', -1)">-</button>
-              <span>${item.qty}</span>
-              <button onclick="changeQty('${esc(item.id)}', 1)">+</button>
-            </div>
-          </div>
-        </div>
-      `).join("");
-
-      const total = cart.reduce((sum, item) => {
-        const digits = String(item.price).replace(/[^\d]/g, "");
-        const n = digits ? parseInt(digits, 10) : 0;
-        return sum + (n * item.qty);
-      }, 0);
-
-      document.getElementById("cartTotal").textContent = total ? `${total} €` : "Na upit";
-    }
-
-    function changeQty(id, delta){
-      const item = cart.find(x => x.id === id);
-      if (!item) return;
-      item.qty += delta;
-      if (item.qty <= 0) cart = cart.filter(x => x.id !== id);
-      renderCart();
-    }
-
-    searchInput.addEventListener("input", render);
-
-    async function loadData() {
-  try {
-    const r = await fetch("./models.json", { cache: "no-store" });
-
-    console.log("Status:", r.status);
-
-    if (!r.ok) {
-      throw new Error(`HTTP greška: ${r.status}`);
-    }
+async function loadData(){
+  try{
+    const r = await fetch("./models.json?ts="+Date.now());
+    if(!r.ok) throw new Error("Ne mogu učitati models.json");
 
     const data = await r.json();
 
-    console.log("JSON:", data);
-
-    if (!Array.isArray(data)) {
-      throw new Error("models.json nije niz.");
-    }
-
-    models = data.map(toViewModel).filter(m => m.name && m.id);
-
-    console.log("Učitano modela:", models.length);
+    models = data.map(toViewModel);
 
     renderChips();
     render();
-    renderCart();
-  } catch (e) {
-    console.error("Greška:", e);
-    grid.innerHTML = `<div class="empty">Greška: ${e.message}</div>`;
+
+  }catch(e){
+    console.error(e);
+    grid.innerHTML = "GREŠKA: "+e.message;
   }
 }
 
-    loadData();
+loadData();
+</script>
   </script>
 </body>
 </html>
